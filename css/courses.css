@@ -1,0 +1,86 @@
+/* ======================================= */
+/* === 2. ESTILOS CURSOS (COURSES.HTML) === */
+/* ======================================= */
+
+/* Hero Section (Fondo de Imagen) */
+.page-hero {
+    position: relative;
+    overflow: hidden;
+    /* Usa un color de fondo si la imagen no carga */
+    background-color: #2c3e50; 
+    color: #fff;
+}
+.page-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.55); /* Overlay oscuro para mayor contraste del texto */
+    z-index: 1;
+}
+.page-hero .container {
+    position: relative;
+    z-index: 2;
+}
+.page-hero h1 {
+    font-weight: 800 !important;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Tarjetas de Cursos */
+.course-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.course-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+.course-content .category {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-primary);
+    background: var(--color-background); /* Asegúrate de definir esta variable o usa #f8faff */
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary-light);
+}
+
+.course-content h3 a {
+    color: var(--color-primary-dark);
+    font-size: 24px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+.course-content h3 a:hover {
+    color: var(--color-primary);
+}
+
+.course-content .description {
+    font-size: 15px;
+    color: var(--color-text-light); /* Asegúrate de definir esta variable o usa #6c757d */
+    margin-bottom: 20px;
+    /* Altura fija para mantener consistencia en las tarjetas */
+    height: 60px; 
+    overflow: hidden;
+}
+
+.course-content .trainer-profile a {
+    font-weight: 600;
+    color: var(--color-primary-dark);
+}
+
+.course-content .price {
+    font-size: 22px;
+    font-weight: 800;
+    color: #e74c3c; /* Precio en color llamativo (ej. Rojo o Naranja) */
+}

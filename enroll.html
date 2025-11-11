@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Inscripción - Academia +</title>
+    <meta name="description" content="Formulario de inscripción al curso.">
+    <meta name="keywords" content="inscripción, curso, formulario, educación">
+
+    <link href="img/favico.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/enroll.css"> 
+</head>
+    <body class="enroll-page">
+        <header id="header" class="header d-flex align-items-center sticky-top">
+            <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <h1 class="sitename">Aprende +</h1>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de Mí</a></li>
+                    <li><a href="courses.html">Cursos</a></li>
+                    <li><a href="planes.html">Planes</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <a class="btn-getstarted" href="enroll.html">Inscríbete Ahora</a>
+            </div>
+        </header>
+        
+        <main class="main">
+            <div class="page-title light-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">Inscripción</h1>
+                <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="current">Inscripción</li>
+                </ol>
+                </nav>
+            </div>
+            </div>
+            
+            <section id="enroll" class="enroll section">
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row justify-content-center"> 
+                        
+                    <div class="col-lg-10 mx-auto"> 
+
+                        <div class="col-lg-12"> 
+                            <div class="enrollment-form-wrapper">
+                            <div class="enrollment-header text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+                                <h2>Inscríbete en tu Curso Soñado</h2>
+                                <p>Da el siguiente paso en tu viaje educativo. Completa el formulario a continuación para asegurar tu cupo en nuestro completo programa de aprendizaje en línea.</p>
+                            </div>
+                            
+                            <form class="enrollment-form" data-aos="fade-up" data-aos-delay="300" id="form-inscripcion-adaptado">
+                                
+                                <h4>Datos Personales</h4>
+
+                                <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    <label for="firstName" class="form-label">Nombre *</label>
+                                    <input type="text" id="firstName" name="nombre" class="form-control" required="" autocomplete="given-name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    <label for="lastName" class="form-label">Apellido *</label>
+                                    <input type="text" id="lastName" name="apellido" class="form-control" required="" autocomplete="family-name">
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    <label for="email" class="form-label">Correo Electrónico *</label>
+                                    <input type="email" id="email" name="correo" class="form-control" required="" autocomplete="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    <label for="phone" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" id="phone" name="telefono" class="form-control" autocomplete="tel">
+                                    </div>
+                                </div>
+                                </div>
+
+                                <h4>Detalles del Curso</h4>
+
+                                <div class="row mb-4">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                    <label for="course" class="form-label">Seleccionar Curso *</label>
+                                    <select id="course" name="curso" class="form-select" required="">
+                                        <option value="">Elige un curso...</option>
+                                        <option value="curso-ejemplo-1">Matemáticas</option>
+                                        <option value="curso-ejemplo-2">Ingles, B1</option>
+                                        <option value="curso-ejemplo-3">Física y Química</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    <label for="education" class="form-label">Nivel de Educación</label>
+                                    <select id="education" name="nivel_educacion" class="form-select">
+                                        <option value="">Selecciona tu nivel de educación...</option>
+                                        <option value="bachillerato">Bachillerato/Preparatoria</option>
+                                        <option value="tecnico">Técnico</option>
+                                        <option value="licenciatura">Licenciatura/Grado</option>
+                                        <option value="posgrado">Posgrado</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    <label for="experience" class="form-label">Nivel de Experiencia</label>
+                                    <select id="experience" name="nivel_experiencia" class="form-select">
+                                        <option value="">Selecciona tu experiencia...</option>
+                                        <option value="principiante">Principiante / Básico</option>
+                                        <option value="intermedio">Intermedio</option>
+                                        <option value="avanzado">Avanzado</option>
+                                        <option value="experto">Experto / Profesional</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                <div class="row mb-4">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                    <label for="motivation" class="form-label">¿Qué te motiva a tomar este curso?</label>
+                                    <textarea id="motivation" name="motivacion" class="form-control" rows="4" placeholder="Comparte tus metas y lo que esperas lograr..."></textarea>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                <h4>Preferencias de Clase</h4>
+
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="form-label">Modalidad de Clase Preferida</label>
+                                            <div class="class-modality custom-radio-group"> 
+                                                <div class="form-check custom-radio-item">
+                                                    <input class="form-check-input" type="radio" name="modalidad_clase" id="modalidad-vivo" value="en_vivo">
+                                                    <label class="form-check-label" for="modalidad-vivo">
+                                                        En Vivo (Online)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check custom-radio-item">
+                                                    <input class="form-check-input" type="radio" name="modalidad_clase" id="modalidad-grabadas" value="grabadas">
+                                                    <label class="form-check-label" for="modalidad-grabadas">
+                                                        Grabadas (A tu ritmo)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check custom-radio-item">
+                                                    <input class="form-check-input" type="radio" name="modalidad_clase" id="modalidad-hibrido" value="hibrido">
+                                                    <label class="form-check-label" for="modalidad-hibrido">
+                                                        Híbrido (Ambas)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4>Información Adicional</h4>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="country" class="form-label">País de Residencia</label>
+                                            <input type="text" id="country" name="pais" class="form-control" autocomplete="country">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="referral" class="form-label">¿Cómo nos conociste?</label>
+                                            <select id="referral" name="referencia" class="form-select">
+                                                <option value="">Selecciona una opción...</option>
+                                                <option value="google">Búsqueda en Google</option>
+                                                <option value="redes">Redes Sociales (Instagram, Facebook)</option>
+                                                <option value="recomendacion">Recomendación de un amigo/a</option>
+                                                <option value="articulo">Artículo o Blog Post</option>
+                                                <option value="otro">Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Meta de Aprendizaje Principal</label>
+                                        <div class="goal-options custom-radio-group"> 
+                                            <div class="form-check custom-radio-item">
+                                                <input class="form-check-input" type="radio" name="meta_aprendizaje" id="meta-certificacion" value="certificacion">
+                                                <label class="form-check-label" for="meta-certificacion">
+                                                    Obtener un certificado
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-radio-item">
+                                                <input class="form-check-input" type="radio" name="meta_aprendizaje" id="meta-carrera" value="carrera">
+                                                <label class="form-check-label" for="meta-carrera">
+                                                    Avance profesional
+                                                </label>
+                                            </div>
+                                            <div class="form-check custom-radio-item">
+                                                <input class="form-check-input" type="radio" name="meta_aprendizaje" id="meta-habilidad" value="habilidad">
+                                                <label class="form-check-label" for="meta-habilidad">
+                                                    Dominar una habilidad
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                <div class="row mb-4">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                    <label class="form-label">Horario de Aprendizaje Preferido</label>
+                                    <div class="schedule-options custom-radio-group"> 
+                                        <div class="form-check custom-radio-item">
+                                        <input class="form-check-input" type="radio" name="horario_preferido" id="weekdays" value="dias_laborables">
+                                        <label class="form-check-label" for="weekdays">
+                                            Días Laborables
+                                        </label>
+                                        </div>
+                                        <div class="form-check custom-radio-item">
+                                        <input class="form-check-input" type="radio" name="horario_preferido" id="weekends" value="fines_semana">
+                                        <label class="form-check-label" for="weekends">
+                                            Fines de Semana
+                                        </label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                    <div class="agreement-section">
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="terms" name="terms" required="">
+                                        <label class="form-check-label" for="terms">
+                                            Acepto los <a href="#">Términos de Servicio</a> y la <a href="#">Política de Privacidad</a> *
+                                        </label>
+                                        </div>
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Me gustaría recibir actualizaciones del curso y contenido educativo por correo electrónico
+                                        </label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                <div class="row mt-5">
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="boton-inscripcion-adaptado">
+                                    Inscríbete Ahora
+                                    </button>
+                                    <p class="enrollment-note mt-3">
+                                    <i class="bi bi-shield-check"></i>
+                                    Tu información es segura y nunca será compartida con terceros
+                                    </p>
+                                </div>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 mt-5"> 
+                            <div class="enrollment-form-wrapper features-wrapper"> 
+                                <div class="section-title text-center" data-aos="fade-up">
+                                    <h2>¿Por Qué Elegir Nuestros Cursos?</h2>
+                                    <p>Tu éxito y desarrollo profesional son nuestra prioridad. Descubre lo que nos diferencia.</p>
+                                </div>
+                                <div class="row gy-4">
+
+                                    <div class="col-md-12" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="d-flex align-items-start feature-item"> 
+                                            <i class="bi bi-clock-history"></i>
+                                            <div> 
+                                                <h3>Aprendizaje Flexible</h3>
+                                                <p>Estudia a tu propio ritmo con acceso 24/7 a todos los materiales y lecciones del curso, sin presiones de horarios.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
+                                        <div class="d-flex align-items-start feature-item">
+                                            <i class="bi bi-person-check"></i>
+                                            <div> 
+                                                <h3>Tutoría Personalizada</h3>
+                                                <p>Acceso directo a Víctor, el tutor principal, para resolver dudas complejas y obtener retroalimentación enfocada a tus metas.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                                        <div class="d-flex align-items-start feature-item">
+                                            <i class="bi bi-bar-chart"></i>
+                                            <div> 
+                                                <h3>Metodología Práctica</h3>
+                                                <p>Enfoque en la aplicación real de conceptos. Dominarás las materias a través de ejercicios y problemas del mundo real.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer id="footer" class="footer position-relative light-background">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-5 col-md-12 footer-info">
+                        <a href="index.html" class="logo d-flex align-items-center"><span class="sitename">Aprende +</span></a>
+                        <p>Una plataforma de aprendizaje online que te ayuda a adquirir nuevas habilidades y avanzar en tu carrera profesional a tu propio ritmo.</p>
+                    </div>
+                    <div class="col-lg-2 col-6 footer-links">
+                        <h4>Enlaces Útiles</h4>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="acerca-de-mi.html">Acerca de Mí</a></li>
+                            <li><a href="courses.html">Cursos</a></li>
+                            <li><a href="planes.html">Planes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 footer-links">
+                        <h4>Nuestros Cursos</h4>
+                        <ul>
+                            <li><a href="#">Matemáticas Avanzadas</a></li>
+                            <li><a href="#">Física Cuántica</a></li>
+                            <li><a href="#">Química Orgánica</a></li>
+                            <li><a href="#">Idiomas Extranjeros</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                        <h4>Contáctanos</h4>
+                        <p>Alcázar de San Juan, Ciudad Real</p>
+                        <p>España</p>
+                        <p class="mt-4"><strong>Teléfono:</strong> <span>+34 686 63 56 67</span></p>
+                        <p><strong>Email:</strong> <span>vgomezcomino@gmail.com</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright text-center mt-4">
+                <p>© <span>Copyright</span> <strong class="sitename">Aprende +</strong> <span>Todos los Derechos Reservados</span></p>
+            </div>
+        </footer>
+        
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        
+        <div id="preloader"></div>
+        
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 	
+        <script src="assets/vendor/php-email-form/validate.js"></script> 	
+        <script src="assets/vendor/aos/aos.js"></script> 	
+        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script> 	
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

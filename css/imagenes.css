@@ -1,0 +1,268 @@
+/* --- NUEVOS ESTILOS PARA EL HERO DE INDEX.HTML (Más Impactante) --- */
+
+/* Sección Heroe completa */
+#courses-hero {
+    min-height: 80vh; /* Asegura que ocupe al menos el 80% del alto de la pantalla */
+    display: flex;
+    align-items: center;
+    padding: 120px 0 60px 0; /* Más padding superior para espacio */
+    position: relative;
+    overflow: hidden; /* Asegura que nada se salga del hero */
+}
+
+/* Contenido del Heroe */
+#courses-hero .hero-content {
+    width: 100%;
+    z-index: 1; /* Para asegurar que el contenido esté sobre cualquier fondo */
+}
+
+/* Texto del Heroe */
+#courses-hero .hero-text {
+    padding-right: 40px; /* Espacio entre el texto y la imagen en escritorios */
+}
+
+#courses-hero .hero-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+#courses-hero .hero-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Botones del Heroe */
+#courses-hero .hero-buttons .btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+#courses-hero .hero-buttons .btn-primary {
+    background-color: var(--color-primary, #007bff);
+    color: #fff;
+    border: 2px solid var(--color-primary, #007bff);
+    margin-right: 15px;
+}
+
+#courses-hero .hero-buttons .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+#courses-hero .hero-buttons .btn-outline {
+    background-color: transparent;
+    color: var(--color-primary, #007bff);
+    border: 2px solid var(--color-primary, #007bff);
+}
+
+#courses-hero .hero-buttons .btn-outline:hover {
+    background-color: var(--color-primary, #007bff);
+    color: #fff;
+}
+
+
+/* Contenedor de la Imagen Principal del Heroe (ahora como fondo) */
+#courses-hero .hero-main-image-container {
+    width: 100%;
+    min-height: 450px; /* Altura mínima para la imagen en escritorio */
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    border-radius: 15px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    position: relative;
+    /* Elimina el background-color: white; si lo tenía el wrapper anterior */
+}
+
+/* Esquinas redondeadas también para el elemento padre si lo envuelve */
+#courses-hero .hero-image {
+    border-radius: 15px;
+    overflow: hidden; /* Asegura que la sombra y el radio de borde se vean bien */
+}
+
+
+/* Estadísticas del Heroe */
+.hero-stats {
+    display: flex;
+    gap: 40px; /* Más espacio entre los elementos de estadísticas */
+    margin-top: 50px; /* Más margen superior para separarse de los botones */
+    padding-left: 5px; /* Pequeño ajuste para alinear con el texto */
+}
+
+.hero-stats .stat-item {
+    text-align: left;
+}
+
+.hero-stats .stat-item .number {
+    display: block;
+    font-size: 42px; /* Mayor tamaño para los números */
+    font-weight: 800;
+    color: var(--color-primary, #007bff);
+    line-height: 1;
+}
+
+.hero-stats .stat-item .label {
+    font-size: 16px; /* Mayor tamaño para la etiqueta */
+    color: #666;
+    margin-top: 8px;
+    display: block;
+    font-weight: 500;
+}
+
+
+/* --- RESPONSIVE PARA EL HERO --- */
+@media (max-width: 991px) { /* Tablets y móviles grandes */
+    #courses-hero {
+        text-align: center;
+        padding: 90px 0 40px 0;
+    }
+
+    #courses-hero .hero-text {
+        padding-right: 0;
+        margin-bottom: 40px; /* Espacio debajo del texto en móviles */
+    }
+
+    #courses-hero .hero-text h1 {
+        font-size: 40px;
+    }
+
+    #courses-hero .hero-text p {
+        font-size: 17px;
+    }
+
+    #courses-hero .hero-buttons {
+        justify-content: center;
+        display: flex; /* Para centrar los botones */
+    }
+
+    #courses-hero .hero-main-image-container {
+        min-height: 350px; /* Menor altura para la imagen en tablets */
+        margin-top: 30px; /* Espacio si el texto está encima */
+    }
+    
+    #courses-hero .hero-stats {
+        justify-content: center; /* Centrar estadísticas en móviles */
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) { /* Móviles pequeños */
+    #courses-hero .hero-text h1 {
+        font-size: 32px;
+    }
+
+    #courses-hero .hero-text p {
+        font-size: 16px;
+    }
+
+    #courses-hero .hero-buttons {
+        flex-direction: column; /* Botones apilados en móviles muy pequeños */
+        align-items: center;
+    }
+    #courses-hero .hero-buttons .btn {
+        width: 80%; /* Ancho completo para botones apilados */
+        margin-right: 0 !important;
+        margin-bottom: 15px; /* Espacio entre botones apilados */
+    }
+
+    #courses-hero .hero-main-image-container {
+        min-height: 280px; /* Menor altura para la imagen en móviles */
+    }
+
+    .hero-stats {
+        flex-direction: column; /* Estadísticas apiladas en móviles pequeños */
+        align-items: center;
+        gap: 20px;
+    }
+    .hero-stats .stat-item {
+        text-align: center;
+    }
+}
+
+
+/* --- OTROS ESTILOS DE SECCIONES (Asegúrate de no borrar el resto de tu main.css) --- */
+
+/* Estilos para la nueva sección de Características (Features) */
+.feature-item-box {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: 100%; 
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-item-box:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.feature-item-box .feature-icon {
+    font-size: 32px;
+    color: var(--color-primary, #007bff);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.feature-item-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-item-box p {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Títulos de sección (general) */
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--color-primary, #007bff);
+    bottom: 0;
+    left: calc(50% - 40px);
+}
+
+.section-title p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .section-title p {
+        font-size: 16px;
+    }
+}

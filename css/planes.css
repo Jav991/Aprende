@@ -1,0 +1,57 @@
+/* =================================
+ * ESTILOS PARA EL SELECTOR DE PRECIOS (TOGGLE)
+ * ================================= */
+
+.price-toggle {
+    background-color: #f0f0f0; /* Fondo del área del toggle */
+    padding: 8px 15px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo por defecto de las etiquetas */
+.price-toggle span {
+    transition: color 0.3s ease;
+    cursor: default;
+}
+
+/* El switch de Bootstrap lo hacemos más grande y con colores personalizados */
+.form-switch .form-check-input {
+    width: 3.5em; /* Ancho del switch */
+    height: 1.8em; /* Alto del switch */
+    margin: 0 15px;
+    background-color: var(--color-secondary); /* Color cuando está apagado (Mensual) */
+    border-color: var(--color-secondary);
+    transition: all 0.3s ease;
+}
+
+.form-switch .form-check-input:focus {
+    box-shadow: none;
+}
+
+/* Color cuando está ENCENDIDO (Anual) */
+.form-switch .form-check-input:checked {
+    background-color: var(--color-primary); 
+    border-color: var(--color-primary);
+}
+
+/* Etiqueta Mensual (cuando el switch está apagado) */
+#monthly-label {
+    color: var(--color-text-dark) !important; /* Etiqueta activa */
+}
+
+/* Etiqueta Anual (cuando el switch está encendido) */
+#annual-label {
+    color: var(--color-text-light) !important; /* Etiqueta inactiva */
+}
+
+/* Invertimos colores cuando el switch está encendido */
+#price-switch:checked ~ #annual-label {
+    color: var(--color-primary-dark) !important; /* Etiqueta activa */
+}
+
+#price-switch:checked ~ #monthly-label {
+    color: var(--color-text-light) !important; /* Etiqueta inactiva */
+}
